@@ -1,45 +1,25 @@
 {
+  "env": {
+    "browser": true,
 
-    "env": {
+    "es2021": true
+  },
 
-        "browser": true,
+  "extends": ["standard-with-typescript", "plugin:jsdoc/recommended"],
 
-        "es2021": true
+  "parser": "@typescript-eslint/parser",
 
-    },
+  "overrides": [],
 
-    "extends": [
+  "parserOptions": {
+    "project": "tsconfig.json",
 
-        "standard-with-typescript",
+    "ecmaVersion": "latest",
 
-        "plugin:jsdoc/recommended"
+    "sourceType": "module"
+  },
 
-        ], 
+  "plugins": ["@typescript-eslint"],
 
-    "parser": "@typescript-eslint/parser",
-
-    "overrides": [
-
-    ],
-
-    "parserOptions": {
-
-        "project": "tsconfig.json",
-
-        "ecmaVersion": "latest",
-
-        "sourceType": "module"
-
-    },
-
-    "plugins": [
-
-        "@typescript-eslint"
-
-    ],
-
-    "rules": {
-
-    }
-
+  "rules": {}
 }
